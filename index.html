@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket Monsters Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style-survey.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300">
+</head>
+<body>
+	<div class="page-wrapper">
+		<div id="top-bar"></div>
+		<header id="header">
+			<h1 id="title">Pocket Monsters Survey Form</h1>
+			<p id="description">Who will you choose</p>
+		</header>
+		<main>
+			<form id="survey-form">
+				<div class="form-group">
+					<label id="name-label" for="name">Name</label>
+					<input id="name" type="text" name="name" placeholder="Full Name" required>
+				</div>
+				<div class="form-group">
+					<label id="email-label" for="email">Email</label>
+					<input id="email" type="email" name="email" placeholder="Email" required>
+				</div>
+				<div class="form-group">
+					<label id="number-label" for="number">Age</label>
+					<input id="number" type="number" name="age" placeholder="Age" min="1" max="120" required>
+				</div>
+				<div class="form-group">
+					<p>Which type of starter would you choose?</p>
+					<label for="grass">
+						<input id="grass" type="radio" name="stater-type" value="grass"> Grass
+					</label>
+					<label for="fire">
+						<input id="fire" type="radio" name="stater-type" value="fire"> Fire
+					</label>
+					<label for="water">
+						<input id="water" type="radio" name="stater-type" value="water"> Water
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="dropdown">Which Eeveelution would you choose?</label>
+					<select id="dropdown" name="eeveelution">
+						<option value="" selected="" disabled="">Select an option</option>
+						<option value="vaporeon">Vaporeon</option>
+						<option value="flareon">Flareon</option>
+						<option value="jolteon">Jolteon</option>
+						<option value="espeon">Espeon</option>
+						<option value="umbreon">Umbreon</option>
+						<option value="glaceon">Glaceon</option>
+						<option value="leafeon">Leafeon</option>
+						<option value="sylveon">Sylveon</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p>Which generation(s) do you like?</p>
+					<div class="generation-container">
+						<div id="pick-generation1">
+							<label for="gen1">
+								<input id="gen1" type="checkbox" name="generation" value="generation-1">Generation I
+							</label><br />
+							<label for="gen2">
+								<input id="gen2" type="checkbox" name="generation" value="generation-2">Generation II
+							</label><br />
+							<label for="gen3">
+								<input id="gen3" type="checkbox" name="generation" value="generation-3">Generation III
+							</label><br />
+							<label for="gen4">
+								<input id="gen4" type="checkbox" name="generation" value="generation-4">Generation IV
+							</label>
+						</div>
+						<div id="pick-generation2">
+							<label for="gen5">
+								<input id="gen5" type="checkbox" name="generation" value="generation-5">Generation V
+							</label><br />
+							<label for="gen6">
+								<input id="gen6" type="checkbox" name="generation" value="generation-6">Generation VI
+							</label><br />
+							<label for="gen7">
+								<input id="gen7" type="checkbox" name="generation" value="generation-7">Generation VII
+							</label><br />
+							<label for="gen8">
+								<input id="gen8" type="checkbox" name="generation" value="generation-8">Generation VIII
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<p>What is your memorable journey in Pokemon?</p>
+					<textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+				</div>
+				<div class="form-group">
+					<button id="submit">Submit</button>
+				</div>
+			</form>
+		</main><br />
+	</div>
+</body>
+</html>
